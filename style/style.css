@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-size: 13px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: seagreen;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+}
+
+.bg-wallpaper {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/bilui-fon1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  opacity: 0.5;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+
+.anchor {
+  position: relative;
+  text-align: center;
+}
+
+.anchor > span {
+  position: absolute;
+  top: -100px;
+}
+
+.inner-nav {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(255, 255, 0, 0.603);
+  margin-bottom: 100px;
+  margin-top: 110px;
+  color: black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(66, 66, 66);
+  color: yellow;
+  border-top: 3px solid black;
+}
+
+.header {
+  background-color: rgb(66, 66, 66);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  border-bottom: 3px solid black;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.navbar-link {
+  padding: 20px;
+  background-color: yellow;
+  display: block;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.navbar-link:hover {
+  transform: scale(1.15);
+}
+
+.navbar-link.active {
+  background-color: rgb(29, 29, 29);
+  color: yellow;
+}
+
+.new-articles {
+  color: seagreen;
+  text-align: left;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+}
+
+.new-articles:hover {
+  color: goldenrod;
+}
+
+.new-articles-read {
+  color: green;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.new-articles-read:hover {
+  color: goldenrod;
+}
+
+.new-articles-link {
+  border-bottom: 1.5px solid black;
+  color: green;
+}
+
+.articles-comment {
+  color: green;
+}
+
+.articles-comment:hover {
+  color: goldenrod;
+}
+
+.h1-articles {
+  text-align: center;
+}
+
+.p-articles:first-letter {
+  color: black;
+  font-size: 10px;
+  font-weight: 900;
+  float: left;
+  border: 2px solid gray;
+  background-color: gold;
+  padding: 5px;
+  margin-right: 3px;
+}
+
+.sublist {
+  list-style: outside
+    url(https://findicons.com/files/icons/1722/gnome_2_18_icon_theme/24/stock_gluepoint_vertical_top.png);
+  font-size: 15px;
+  background-color: rgb(46, 46, 46);
+  color: rgb(238, 216, 216);
+  font-weight: normal;
+  margin: 40px;
+  padding: 20px 15px 40px 37px;
+}
+
+.list-catalog {
+  list-style: outside
+    url(https://findicons.com/files/icons/2534/aroma/24/chip.png);
+  font-size: 25px;
+  background-color: rgba(29, 29, 29, 0.438);
+  color: yellow;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.1em;
+  padding: 1em 2em;
+  flex-direction: column;
+}
+
+.link-gallery a {
+  color: black;
+}
+
+.bg-wallpaper-gallery {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background-image: url(../pages/image/vz-55.jpg),
+    url(../pages/image/manticore.jpg);
+  background-size: 100px, 700px;
+  background-position: 98% 16%, center;
+  background-repeat: no-repeat, repeat;
+}
+
+.slide-gallery {
+  border: 20px solid grey;
+  margin: 10px;
+}
+
+.slide-gallery:hover {
+  border: 20px solid transparent;
+  margin: 10px;
+}
+
+.container--gallery {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: black;
+  text-transform: uppercase;
+}
+
+.copyright {
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-style {
+  background-color: rgba(128, 128, 128, 0.932);
+  color: black;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.input-name {
+  text-transform: capitalize;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: black;
+  background-color: rgba(255, 255, 0, 0.726);
+  border: 2px solid;
+}
+
+.btn:hover {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 20px;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.sub-link {
+  color: seagreen;
+  transition: 0.5s;
+}
+
+.sub-link:hover {
+  color: lightseagreen;
+}
+.return {
+  color: slateblue;
+  transition: 0.5s;
+}
+
+.return:hover {
+  color: lightseagreen;
+}
